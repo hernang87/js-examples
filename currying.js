@@ -19,4 +19,5 @@ function curriedAdd(x, y) {
 
 var c1 = curriedAdd(); // typeof c1 === 'function'
 var c2 = curriedAdd(2); // typeof c2 === 'function' here we have a partial application of curriedAdd
-var c3 = f2(3); // c3 === 5
+var c3 = c2(3); // c3 === 5
+var c4 = c1(2)(3); // c4 === 5
