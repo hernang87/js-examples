@@ -4,7 +4,7 @@
 // results at hand so there's no need to
 // recalculate the results for specific parameters.
 
-// Example with one parameters
+// Example with one parameter
 var fibonacci = (function() {
   // Initialize the cache object where
   // the calculated results will be stored.
@@ -15,7 +15,7 @@ var fibonacci = (function() {
   // because is a standard function where
   // the memoize technique can really be
   // seen explicitly.
-  function fib(n) {
+  var fib = n => {
     var val;
 
     // First we check if the parameters
