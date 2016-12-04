@@ -11,7 +11,7 @@ function curriedAdd(x, y) {
     // just one parameter, because the first part for the sum has already
     // been received on the first call.
     return z => {
-      return x + z;
+        return x + z;
     }
   }
   return x + y;
